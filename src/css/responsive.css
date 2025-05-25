@@ -1,0 +1,11 @@
+@media (max-width: 375px) {
+  .hidden-menu {
+    display: none;
+  }
+  .responsive-button {
+    display: flex;
+  }
+  .background {
+    display: none;
+  }
+}

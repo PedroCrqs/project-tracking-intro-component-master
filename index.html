@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Project tracking intro component</title>
     <meta name="author" content="Pedro Cerqueira" />
     <link rel="stylesheet" href="src/css/styles.css" />
@@ -21,7 +18,12 @@
   <body>
     <div class="container">
       <header class="header">
-        <img class="background" src="src/images/illustration-devices.svg" />
+        <img
+          class="background"
+          src="src/images/illustration-devices.svg"
+          alt=""
+          aria-hidden="true"
+        />
 
         <button
           type="button"
@@ -29,7 +31,7 @@
           class="responsive-button hidden-button"
           id="openButton"
         >
-          <img src="src/images/icon-hamburger.svg" />
+          <img src="src/images/icon-hamburger.svg" alt="Open menu" />
         </button>
 
         <button
@@ -38,23 +40,31 @@
           class="hidden-button"
           id="closeButton"
         >
-          <img src="src/images/icon-close.svg" />
+          <img src="src/images/icon-close.svg" alt="Close menu" />
         </button>
 
-        <section class="hidden-menu menu">
-          <button>Product</button>
-          <button>Features</button> <button>Pricing</button>
-          <button>Login</button>
-        </section>
+        <nav class="header-menu hidden-menu" aria-label="Main navigation">
+          <a class="button" href="#">PRODUCT</a>
+          <a class="button" href="#">FEATURES</a>
+          <a class="button" href="#">PRICING</a>
+          <span class="login">&#8226;</span>
+          <a class="login button" href="#">LOGIN</a>
+        </nav>
       </header>
 
       <main class="main">
-        <img src="src/images/logo.svg" />
-        <p>New Monograph Dashboard</p>
-        <h1>Powerful insights into your team</h1>
-        <p>Project planning and time tracking for agile teams</p>
-        <button>Schedule a demo</button>
-        <button>to see a live preview</button>
+        <img class="logo" src="src/images/logo.svg" alt="Project logo" />
+        <p class="subheading">
+          <span class="new-word">NEW</span> MONOGRAPH DASHBOARD
+        </p>
+        <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+        <p class="explanation">
+          Project planning and time tracking for agile teams
+        </p>
+        <div class="cta-container">
+          <button class="button schedule-button">SCHEDULE A DEMO</button>
+          <p class="calltoaction">TO SEE A PREVIEW</p>
+        </div>
       </main>
     </div>
 

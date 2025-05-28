@@ -1,15 +1,15 @@
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".header-menu");
 const openButton = document.getElementById("openButton");
 const closeButton = document.getElementById("closeButton");
 
-function openMenu() {
+const openMenu = () => {
   menu.classList.toggle("hidden-menu");
   openButton.classList.toggle("responsive-button");
   closeButton.classList.toggle("hidden-button");
-}
+};
 
-function closeMenu() {
+const closeMenu = () => {
   menu.classList.toggle("hidden-menu");
   openButton.classList.toggle("responsive-button");
   closeButton.classList.toggle("hidden-button");
-}
+};

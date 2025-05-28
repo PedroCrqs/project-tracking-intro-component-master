@@ -1,6 +1,12 @@
-@media (max-width: 375px) {
+@media (max-width: 975px) {
+  .header-menu {
+    flex-direction: column;
+    top: none;
+    left: none;
+  }
+
   .hidden-menu {
-    display: none;
+    display: none !important;
   }
   .responsive-button {
     display: flex;

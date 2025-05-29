@@ -35,6 +35,7 @@ nav a {
   width: auto;
   text-decoration: none;
   color: hsl(230, 29%, 20%);
+  z-index: 1000;
 }
 
 nav a:hover {
@@ -48,9 +49,66 @@ nav a:hover {
   font-size: 15px;
 }
 
+.hidden-button {
+  display: none;
+}
+
+.header {
+  background-color: hsl(207, 33%, 95%);
+  border-radius: 0 0 0 50px;
+  position: absolute;
+  top: -10px;
+  right: 50px;
+  width: 650px;
+  height: 375px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 75px;
+  position: relative;
+  left: 75px;
+}
+
+.background {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  width: 130%;
+  overflow: hidden;
+}
+
+.header-menu {
+  position: relative;
+  top: 60px;
+  left: 150px;
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+}
+
+.login {
+  color: hsl(231, 7%, 65%);
+}
+
 .logo {
   margin-top: 40px;
   margin-bottom: 100px;
+}
+
+.main {
+  align-content: left;
+  justify-content: left;
+  margin: 0;
+  order: 1;
+  max-width: 500px;
+  position: absolute;
+  top: 0px;
 }
 
 .new-word {
@@ -76,85 +134,16 @@ nav a:hover {
   font-size: 15px;
 }
 
-.cta-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.calltoaction {
-  color: hsl(231, 7%, 65%);
-  letter-spacing: 4px;
-  margin-left: 10px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  position: relative;
-  top: -5px;
-  font-size: 15px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 75px;
-  position: relative;
-  left: 75px;
-}
-
-.login {
-  color: hsl(231, 7%, 65%);
-}
-
-.background {
-  position: absolute;
-  top: 200px;
-  left: 10px;
-  width: 130%;
-  overflow: hidden;
-}
-
-.header {
-  background-color: hsl(207, 33%, 95%);
-  border-radius: 0 0 0 50px;
-  position: absolute;
-  top: -10px;
-  right: 50px;
-  width: 650px;
-  height: 375px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-
-.header-menu {
-  position: relative;
-  top: 60px;
-  left: 150px;
-  display: flex;
-  gap: 40px;
-  flex-direction: row;
-}
-
-.hidden-button {
-  display: none;
-}
-
-.main {
-  align-content: left;
-  justify-content: left;
-  margin: 0;
-  order: 1;
-  max-width: 500px;
-  position: absolute;
-  top: 0px;
-}
-
 .explanation {
   color: hsl(230, 11%, 40%);
   margin-top: 0;
   margin-bottom: 50px;
   max-width: 275px;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .schedule-button {
@@ -171,6 +160,18 @@ nav a:hover {
 
 .schedule-button:hover {
   text-decoration: underline;
+}
+
+.calltoaction {
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 4px;
+  margin-left: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: -5px;
+  font-size: 15px;
 }
 
 .attribution {

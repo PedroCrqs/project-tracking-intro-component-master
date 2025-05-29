@@ -1,17 +1,96 @@
-@media (max-width: 975px) {
+@media (max-width: 768px) {
+  body {
+    margin-left: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    background-color: white;
+    z-index: 3;
+    text-align: center;
+    width: 260px;
+    height: 200px;
+    margin-left: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    transform: translateX(-145px);
+    padding: 20px;
+  }
+
+  nav a {
+    font-size: 18px !important;
+  }
+
+  .container {
+    left: 30px;
+  }
+
+  .logo {
+    position: relative;
+    top: -300px;
+    width: auto;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 450px;
+    z-index: 1;
+    left: 155px;
+  }
+
   .header-menu {
     flex-direction: column;
-    top: none;
-    left: none;
+    right: 50px;
+    gap: 20px;
+  }
+
+  .button-menu {
+    background: none;
+    border: none;
+    width: auto;
+    position: relative;
+    top: 37px;
+    left: 120px;
+  }
+
+  .button-menu img {
+    width: 30px;
+    height: auto;
   }
 
   .hidden-menu {
-    display: none !important;
-  }
-  .responsive-button {
-    display: flex;
-  }
-  .background {
     display: none;
+  }
+
+  .responsive-button {
+    display: block;
+  }
+
+  .background {
+    position: absolute;
+    width: 140%;
+    max-width: none;
+    right: 30px;
+    left: auto;
+    top: 130px;
+    z-index: 2;
+  }
+
+  .main {
+    z-index: 2;
+    position: relative;
+    top: 300px;
+    margin-left: 0;
+  }
+
+  .attribution {
+    left: 70px;
   }
 }

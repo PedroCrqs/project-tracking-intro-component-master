@@ -10,7 +10,7 @@ body {
   text-align: left;
   max-width: 1440px;
   margin-left: 50px;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 h1 {

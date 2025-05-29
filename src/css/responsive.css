@@ -1,7 +1,9 @@
 @media (max-width: 768px) {
   body {
     margin-left: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    max-width: 375px !important;
+    max-height: 800px;
   }
 
   h1 {
@@ -86,7 +88,7 @@
   .main {
     z-index: 2;
     position: relative;
-    top: 300px;
+    margin-top: 300px;
     margin-left: 0;
   }
 

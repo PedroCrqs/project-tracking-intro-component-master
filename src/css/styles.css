@@ -10,7 +10,7 @@ body {
   text-align: left;
   max-width: 1440px;
   margin-left: 50px;
-  overflow: hidden !important;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -80,7 +80,7 @@ nav a:hover {
   top: 200px;
   left: 10px;
   width: 130%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header-menu {
@@ -177,7 +177,7 @@ nav a:hover {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .attribution a {
